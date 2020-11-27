@@ -12,10 +12,10 @@ first_name,
 last_name,
 title, 
 content
-) VALUE ($1, $2, $3, $4) RETURNING *`;
+) VALUES ($1, $2, $3, $4) RETURNING *`;
   let values = [
-    noteObject.firstname,
-    noteObject.lastname,
+    noteObject.first_name,
+    noteObject.last_name,
     noteObject.title,
     noteObject.content,
   ];
